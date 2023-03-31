@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title New Diagnosis
+    link(rel='stylesheet', href='/new.css')
+  body
+    h1 New Diagnosis
+    form(action=`/patients/${id}/diagnoses`, method='post')
+      label(for='diagnosis') Diagnosis:
+      input(type='text', id='diagnosis', name='diagnosis')
+      br
+      button(type='submit') Add
+      a(href=`/patients/${id}`) Cancel

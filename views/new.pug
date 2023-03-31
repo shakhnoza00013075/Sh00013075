@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Add New Patient
+    link(rel='stylesheet', href='/new.css')
+  body
+    h1 Add New Patient
+    form(method='post', action='/patients')
+      label(for='name') Name:
+      input(type='text', name='name')
+      br
+      label(for='age') Age:
+      input(type='number', name='age')
+      br
+      label(for='gender') Gender:
+      select(name='gender')
+        option(value='male') Male
+        option(value='female') Female
+      br
+      
+      input(type='submit', value='Add Patient')

@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title= patient.name
+    link(rel='stylesheet', href='/patient.css')
+  body
+    h1= patient.name
+    p Age: #{patient.age}
+    p Gender: #{patient.gender}
+    h2 Diagnoses
+    p
+      a(href=`/patients/${id}/diagnoses/new`) Add Diagnosis
+    ul
+      each diagnosis in patient.diagnoses
+        li= diagnosis
+    p
+      a(href='/') Back

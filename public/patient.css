@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #008CBA;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  p {
+    margin: 20px;
+  }
+  
+  button {
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #006C87;
+  }
+  
+  input[type=text], input[type=number], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  input[type=submit] {
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #006C87;
+  }
+  
+  input[type=submit]:disabled {
+    background-color: #ddd;
+    color: #666;
+    cursor: not-allowed;
+  }
+  

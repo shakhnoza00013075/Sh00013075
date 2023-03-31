@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title Medical Registry App
+    link(rel='stylesheet', href='/style.css')
+  body
+     h1 Patient Registry
+  table
+    thead
+      tr
+        th Name</th>
+        th Age</th>
+        th Gender</th>
+        th Diagnoses</th>
+        th Actions</th>
+    tbody
+      each patient in patients
+        tr
+          td #{patient.name}</td>
+          td #{patient.age}</td>
+          td #{patient.gender}</td>
+          td #{patient.diagnoses}</td>
+          td
+            form(method='POST', action=`/patients/${patient.id}/delete`)
+              button(type='submit') Delete
+            form(method='GET', action=`/patients/${patient.id}/edit`)
+              button(type='submit') Edit
+  p
+    a(href='/patients/new') Add Patient
